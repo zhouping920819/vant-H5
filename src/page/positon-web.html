@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&libraries=convertor&key=GPHBZ-WBV6I-NFKG7-5BZ3O-WBEDH-WRBXV"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+    window.onload=function(){
+        //调用地址解析类
+        geocoder = new qq.maps.Geocoder({
+            complete: function (result) {
+                debugger
+// debugger;
+                location.href = "http://apis.map.qq.com/uri/v1/marker?marker=coord:" + result.detail.location.lat + "," + result.detail.location.lng + ";title:想要显示的坐标名称&referer=myapp";
+            }
+        });
+        geocoder.getLocation("江苏省南京市河西CBD");
+
+
+
+        //console.log()
+        //$('.class-btn').attr('name','wenbin'); 百度转腾讯坐标
+        //qq.maps.convertor.translate(new qq.maps.LatLng("39.91512","116.403995"), 3, function(res){
+        // latlng = res[0];
+        // console.log(latlng);
+//});
+
+    }
+
+</script>
+</body>
+</html>

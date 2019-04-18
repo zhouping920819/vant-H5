@@ -1,0 +1,21 @@
+/**
+ 书写页面公共样式
+**/
+
+
+/***眉头导航栏样式***/
+.van-icon-arrow-left:before{
+    content: "\F008";
+    color:#7B7B7B	;
+}
+.van-nav-bar__text{
+    color: #7B7B7B !important;
+    margin: 0 -15px;
+    padding: 0 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.van-hairline--top-bottom::after{
+    border-width: 0 0;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=zt3s50myON2u9iLx16ZRozwxVisSLR0z"></script>
+
+    <meta property="og:title" content="手机快活贷—零花钱">
+    <meta property="og:description" content="随用零花，方便到家。为消费用途的个人专属定制">
+    <meta property="og:image"
+          content="">
+    <meta property="og:url" content="http://116.211.87.4:18081">
+    <title>H5-app</title>
+    <title></title>
+    <style>
+        .van-cell-group {
+            background-color: transparent !important;
+        }
+
+        .van-cell {
+            background-color: transparent !important;
+        }
+
+        .van-nav-bar {
+            /* background-color:transparent!important;*/
+        }
+    </style>
+    <!--
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant@1.6/lib/index.css">
+          <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vant@1.6/lib/vant.min.js"></script>-->
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+<script type="text/javascript" src="./static/js/flexible.js"></script>
+
+</body>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<script>
+    $.post("").done(function (data) {
+        // 注意这里的url，一定要这样写，也就是动态获取，不然也不会成功的。
+        console.log(data)
+        if (data.msg == "操作成功") {
+            debugger
+            if (data.data.signature != null) {
+                debugger
+                // 配置
+                wx.config({
+                    debug: false,   // 测试阶段，可以写为true，主要是为了测试是否配置成功
+                    appId: data.data.appId,
+                    timestamp: data.data.timestamp,
+                    nonceStr: data.data.nonceStr,
+                    signature: data.data.signature,
+                    jsApiList: [
+                        'checkJsApi',
+                        'onMenuShareTimeline',
+                        'onMenuShareAppMessage',
+                        'onMenuShareQQ',
+                        'onMenuShareQZone',
+                        // 'onMenuShareWeibo'
+                    ]
+                });
+
+                var title = "手机快活贷—零花钱";
+                var desc = "随用零花，方便到家。为消费用途的个人专属定制";
+                // 分享的图片，最好是正方形，不是也没关系，但是一定是http模式，即绝对路径，而不是服务器路劲
+                var imgUrl = "";
+                // 这里的地址可以写死，也可以动态获取，但是一定不能带有微信分享后的参数，不然分享也是失败的
+                var link = "http://116.211.87.4:18081";
+
+
+                // 分享给朋友、QQ、微博
+                var shareData = {
+                    "imgUrl": imgUrl,
+                    "title": title,
+                    "desc": desc,
+                    'link': link
+                };
+                // 分享到朋友圈
+                var shareToTimeline = {
+                    "imgUrl": imgUrl,
+                    "title": title,
+                    'link': link,
+                    "desc": desc
+                }
+                wx.ready(function () {
+                    //wx.updateAppMessageShareData(shareData);
+                    //wx.updateTimelineShareData(shareToTimeline);
+                    //原有的 wx.onMenuShareTimeline、wx.onMenuShareAppMessage、wx.onMenuShareQQ、wx.onMenuShareQZone 接口，即将废弃。
+                    // 请尽快迁移使用客户端6.7.2及JSSDK 1.4.0以上版本支持的 wx.updateAppMessageShareData、updateTimelineShareData 接口。
+
+                    wx.onMenuShareTimeline(shareToTimeline); // 分享朋友圈
+                    wx.onMenuShareAppMessage(shareData); // 分享朋友
+                    wx.onMenuShareQQ(shareData);  // QQ分享
+                    wx.onMenuShareQZone(shareData); // QQ空间
+
+                    wx.error(function (res) {
+                        alert(res.errMsg);
+                    });
+                });
+            }
+        }
+    }).fail(function (msg) {
+        console.log("error:" + msg);
+    });
+</script>
+<script>
+
+</script>
+</html>
