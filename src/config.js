@@ -1,4 +1,4 @@
-let baseUrl = 'http://121.43.161.213:18081'
+let baseUrl = ''
 
 if (process.env.NODE_ENV === 'development') {
     baseUrl = ''
