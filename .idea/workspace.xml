@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f7ea277-45ec-4f72-b1e3-fb710b775892" name="Default" comment="" />
+    <list default="true" id="8f7ea277-45ec-4f72-b1e3-fb710b775892" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.babelrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.editorconfig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.eslintrc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/Vant_h5.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/webpack.base.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/webpack.dev.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/build/webpack.pro.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/test.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/App.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/comcss.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/less/define.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/less/main.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/less/reset.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/index.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/main.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/config.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/http.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/page/IdentityCertification/index.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/page/IdentityCertification/index.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/page/positon-web.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/router.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/store/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/di.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/icon_home_n.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/icon_home_p.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/icon_mine_n.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/icon_mine_p.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/icon_share.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/flexible.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +54,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="11">
-                <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <first_editor relative-caret-position="186">
+                <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -210,41 +249,7 @@
             <path>
               <item name="pinmoney_h5" type="b2602c69:ProjectViewProjectNode" />
               <item name="pinmoney_h5" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinmoney_h5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinmoney_h5" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinmoney_h5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinmoney_h5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinmoney_h5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinmoney_h5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinmoney_h5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinmoney_h5" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="IdentityCertification" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinmoney_h5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinmoney_h5" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pinmoney_h5" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pinmoney_h5" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -316,6 +321,18 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="pinmoney_h5" />
+      <envs />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -370,15 +387,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555553046712</updated>
-      <workItem from="1555553047968" duration="2182000" />
+      <workItem from="1555553047968" duration="2525000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2182000" />
+    <option name="totallyTimeSpent" value="2525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -389,7 +407,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37935323" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -637,8 +655,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="11">
-            <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <first_editor relative-caret-position="186">
+            <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
             <folding />
           </first_editor>
           <second_editor />
