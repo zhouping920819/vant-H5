@@ -34,8 +34,8 @@ if (shell.exec('npm run build').code !== 0) {//执行npm run build 命令
 }
 
 //由于我的用另外一个仓库存放dist目录，所以这里要将文件增量复制到目标目录。并切换到对应目录。
-shell.cp ('-r', './dist/*', '../../Rychou');
-shell.cd('../../Rychou');
+shell.cp ('-r', './dist/*', '../build');
+shell.cd('../build');
 
 shell.exec('git add .');
 shell.exec("git commit -m 'autocommit'")
