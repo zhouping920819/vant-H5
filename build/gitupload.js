@@ -6,6 +6,7 @@ var shell = require('shelljs');
 
 if (shell.exec('npm run build').code !== 0) {//执行npm run build 命令
     shell.echo('Error: Git commit failed');
+    shell.exec('git pull')
     shell.exit(1);
 }
 
