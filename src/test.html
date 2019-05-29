@@ -1,0 +1,69 @@
+
+
+<meta charset="utf8"><html>
+<body>
+<!--
+<script src="http://code.jquery.com/jquery-1.9.0.min.js" type="text/javascript"></script>
+-->
+<div style="text-align: center;margin-top: 50%">
+    <input type="button" onclick="btnShareFriends()" value='分享给微信好友' style="width: 80%;height: 60px;font-size: 35px;font-weight: bold"> </input>
+    <br/>
+    <input type="button" onclick="btnWeixinShare()" value='分享到微信朋友圈' style="margin-top: 2rem;width: 80%;height: 60px;font-size: 35px;font-weight: bold" > </input>
+</div>
+<script type="text/javascript">
+    var data = {
+        title: "手机快活贷—零花钱",
+        content: "最高30万秒审批 ,快速申请，专人对接",
+        sourceUrl: location.href,
+        source: 'XXX',
+        target: '',
+        imageUrl: "https://kira.ningzefintech.com/fastdfs/group1/M00/00/01/rBDLuluppQ2AWSmTAAVwToCgmVQ269.png"
+    }
+    function ucShare() {
+        btnShareFriends()
+    }
+    function btnShareFriends() {
+        const isiOS = /(iPhone|iPad|iPod)/.test(navigator.userAgent);  // 判断应用平台
+        if (isiOS) {
+            if (ucbrowser.web_shareEX) {
+                ucbrowser.web_shareEX(
+                        JSON.stringify({
+                            title: data.title,
+                            content: data.content,
+                            sourceUrl: data.sourceUrl,
+                            source: 'XXX',
+                            imageUrl: this.imageUrl,
+                            target: ''
+                        })
+                )
+            } else {
+                ucbrowser.web_share(this.title,this.content.this.sourceUrl,this.imageUrl,'kWeixin');
+            }
+        } else {
+                ucweb.startRequest("shell.page_share", [this.title, this.content,this.sourceUrl,this.imageUrl,'WechatFriends']);
+        }
+    }
+    function btnWeixinShare(){
+        const isiOS = /(iPhone|iPad|iPod)/.test(navigator.userAgent);  // 判断应用平台
+        if (isiOS) {
+            if (ucbrowser.web_shareEX) {
+                ucbrowser.web_shareEX(
+                        JSON.stringify({
+                            title: data.title,
+                            content: data.content,
+                            sourceUrl: data.sourceUrl,
+                            imageUrl: this.imageUrl,
+                            source: 'XXX',
+                            target: ''
+                        })
+                )
+            } else {
+                ucbrowser.web_share(this.title,this.content.this.sourceUrl,this.imageUrl,'kWeixin');
+            }
+        } else {
+              ucweb.startRequest("shell.page_share", [this.title, this.content,this.sourceUrl,this.imageUrl,'WechatTimeline']);
+        }
+    }
+</script>
+</body>
+</html>
