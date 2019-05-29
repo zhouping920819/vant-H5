@@ -1,8 +1,10 @@
+/*
 
 var shell = require('shelljs/global')
-var res = exec('git status -s').stdout;
+var res = exec('git status -s').stdout
 console.log('开始转换 git status')
-var arrayResult= res.split('\n');
+
+var arrayResult = res.split('\n');
 
 var array = []
 console.log('开始筛选 git status')
@@ -18,7 +20,23 @@ var host = 'https://github.com/zhouping920819/vant-H5.git'
 console.log('开始转换 上传:',host)
 array.forEach((item) => {
     var i = item.trim().replace(/^m|^a/i,'').trim()
-    console.log('iiiii' + i)
     exec(i)
-   // console.log(i)
 })
+*/
+//局部模式
+var shell = require('shelljs');
+//全局模式下，就不需要用shell开头了。
+//require('shelljs/global');
+
+if (shell.exec('npm run build').code !== 0) {//执行npm run build 命令
+    shell.echo('Error: Git commit failed');
+    shell.exit(1);
+}
+
+//由于我的用另外一个仓库存放dist目录，所以这里要将文件增量复制到目标目录。并切换到对应目录。
+shell.cp ('-r', './dist/*', '../../Rychou');
+shell.cd('../../Rychou');
+
+shell.exec('git add .');
+shell.exec("git commit -m 'autocommit'")
+shell.exec('git push')
